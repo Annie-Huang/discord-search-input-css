@@ -1,0 +1,6 @@
+Discord Made The Coolest CSS Only Input Animation (https://www.youtube.com/watch?v=cowG052uyQw)
+
+https://github.com/WebDevSimplified/discord-search-input-css/tree/main
+https://github.com/Annie-Huang/discord-search-input-css
+
+-----------------------------------------------------------------------------
