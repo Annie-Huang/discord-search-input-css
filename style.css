@@ -51,6 +51,8 @@ body {
   box-shadow: 0 0 0 0.25rem var(--outline-color);
 }
 
-.input:focus {
+.input:focus,
+/* Meaning if there is text entered in the <input>, when user tab out, we still want to keep the long width */
+.input:not(:placeholder-shown) {
   width: 15em;
 }
