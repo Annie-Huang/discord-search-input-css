@@ -37,6 +37,16 @@ body {
   font-size: 0.875em;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .input {
+    transition: none;
+  }
+}
+
+.input::placeholder {
+  color: var(--foreground-color-dark);
+}
+
 .input:focus-visible {
   box-shadow: 0 0 0 0.25rem var(--outline-color);
 }
