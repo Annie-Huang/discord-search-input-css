@@ -25,6 +25,9 @@ body {
 }
 
 .input {
+  background-color: var(--bg-color-dark);
+  color: var(--foreground-color);
+  border: none;
   width: 9em;
   transition: width 0.25s;
 }
