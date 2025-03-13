@@ -3,6 +3,7 @@
   --bg-color-dark: hsl(225, 6.3%, 12.5%);
   --foreground-color: hsl(210, 9.1%, 87%);
   --foreground-color-dark: hsl(214, 8.1%, 61.2%);
+  --outline-color: hsl(200, 100%, 50%);
 }
 
 body {
@@ -30,7 +31,16 @@ body {
   border: none;
   width: 9em;
   transition: width 0.25s;
+  outline: none;
+  border-radius: 0.25em;
+  padding: 0.375em;
+  font-size: 0.875em;
 }
+
+.input:focus-visible {
+  box-shadow: 0 0 0 0.25rem var(--outline-color);
+}
+
 .input:focus {
   width: 15em;
 }
