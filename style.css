@@ -23,3 +23,11 @@ body {
   width: 30px;
   background-color: var(--foreground-color-dark);
 }
+
+.input {
+  width: 9em;
+  transition: width 0.25s;
+}
+.input:focus {
+  width: 15em;
+}
