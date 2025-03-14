@@ -84,8 +84,12 @@ button:focus-visible {
   border-radius: 0.25rem;
 
   /* Animation */
-  /* Just the first two alone will make it disappear straight away when adding a letter, but slowly appear again when delete the letter */
-  transition-property: opacity, rotate;
+  /* Just the transition-property and transition-duration alone will make it disappear straight away when adding a letter, but slowly appear again when delete the letter */
+  /*transition-property: opacity, rotate;*/
+
+  transition-behavior: discrete; /* discrete allow us to transition between display and visibility. when our transition-duration is long, e.g. 1s. Add discrete will make both icon cross fading with each other */
+  transition-property: opacity, rotate, visibility;
+
   transition-duration: 0.5s; /* If we change the speed to 0.15s (e.g. when it's fast enough). we don't even need to add visibility property at the top (line 82) and at the bottom (line 100) */
 }
 
