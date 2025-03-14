@@ -90,7 +90,8 @@ button:focus-visible {
 /* !!!! If our wrapper has a placeholder-shown in the input, then we will get the child component .search-icon from the wrapper and make it visible
    It has to use with the following "clears the ‘X’" section. Otherwise the X is shows the browser default one.
  */
-.search-wrapper:has(.input:placeholder-shown) .search-icon {
+.search-wrapper:has(.input:placeholder-shown) .search-icon,
+.search-wrapper:has(.input:not(:placeholder-shown)) .x-icon {
   rotate: 0deg;
   opacity: 1;
   pointer-events: all;
