@@ -75,6 +75,8 @@ button:focus-visible {
   /* OMG, I cannot believe they use the same trick that I use for coles's search box. */
   opacity: 0;
   pointer-events: none;
+  /* !!!! You will need to add the below to make it totally untabable, if you just use above, you just cannot click, but still be able to tab into it. */
+  visibility: hidden;
 }
 
 button {
