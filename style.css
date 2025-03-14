@@ -77,6 +77,15 @@ button:focus-visible {
   pointer-events: none;
   /* !!!! You will need to add the below to make it totally untabable, if you just use above, you just cannot click, but still be able to tab into it. */
   visibility: hidden;
+
+  border-radius: 0.25rem;
+}
+
+/* !!!! If our wrapper has a placeholder-shown in the input, then we will get the child component .search-icon from the wrapper and make it visible */
+.search-wrapper:has(.input:placeholder-shown) .search-icon {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
 }
 
 button {
