@@ -47,7 +47,8 @@ body {
   color: var(--foreground-color-dark);
 }
 
-.input:focus-visible {
+.input:focus-visible,
+button:focus-visible {
   box-shadow: 0 0 0 0.25rem var(--outline-color);
 }
 
@@ -70,6 +71,10 @@ body {
   top: 50%;
   translate: 0 -50%;
   color: var(--foreground-color-dark);
+
+  /* OMG, I cannot believe they use the same trick that I use for coles's search box. */
+  opacity: 0;
+  pointer-events: none;
 }
 
 button {
