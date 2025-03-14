@@ -72,6 +72,7 @@ button:focus-visible {
   translate: 0 -50%;
   color: var(--foreground-color-dark);
 
+  rotate: 90deg;
   /* OMG, I cannot believe they use the same trick that I use for coles's search box. */
   opacity: 0;
   pointer-events: none;
@@ -90,6 +91,7 @@ button:focus-visible {
    It has to use with the following "clears the ‘X’" section. Otherwise the X is shows the browser default one.
  */
 .search-wrapper:has(.input:placeholder-shown) .search-icon {
+  rotate: 0deg;
   opacity: 1;
   pointer-events: all;
   visibility: visible;
