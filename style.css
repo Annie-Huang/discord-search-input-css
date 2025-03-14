@@ -79,6 +79,11 @@ button:focus-visible {
   visibility: hidden;
 
   border-radius: 0.25rem;
+
+  /* Animation */
+  /* Just the first two alone will make it disappear straight away when adding a letter, but slowly appear again when delete the letter */
+  transition-property: opacity, rotate;
+  transition-duration: 0.5s;
 }
 
 /* !!!! If our wrapper has a placeholder-shown in the input, then we will get the child component .search-icon from the wrapper and make it visible
