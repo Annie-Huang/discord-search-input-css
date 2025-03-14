@@ -69,4 +69,10 @@ body {
   right: 0.25rem;
   top: 50%;
   translate: 0 -50%;
+  color: var(--foreground-color-dark);
+}
+
+button {
+  all: unset; /* remove all agent styles for buttons */
+  cursor: pointer;
 }
